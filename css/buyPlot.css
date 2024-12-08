@@ -2,18 +2,102 @@
 /*******************************
   Buy A Plot Styles
 *******************************/
+h4 {
+  margin-left: 2em;
+}
 form {
   width: 50%;
   margin: 0 auto;
-  background-color: #2B2A16;
+  background-color: #3c2a49;
   padding: 2em;
-  color: #fff;
+  color: #FAF4D3;
 }
 input {
-    display: block;
+  display: block;
 }
-
+select {
+  margin-bottom: 2em;
+}
 input[type="checkbox"],
 input[type="radio"] {
-    display: inline-block;
+  display: inline-block;
+}
+.bright {
+  color: #FF7F50;
+}
+
+/******************
+  Form
+******************/
+
+form {
+  width: 30rem;
+}
+fieldset {
+  margin: 2em;
+  padding: 0 2em 2em 2em;
+  border: 1px solid #FAF4D3;
+  border-radius: .5em;
+}
+legend {
+  font-size: 1.2em;
+}
+input, select {
+  padding: 5px;
+  font-size: 16px;
+  display: block;
+}
+label {
+  display: inline-block;
+  margin-top: 1.5em;
+}
+#newTab {
+  padding: 0;
+  border: none;
+  margin: 0;
+  display: inline;
+}
+.helpText {
+  margin-bottom: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-left: 2em;
+}
+
+
+/******************
+  Form Buttons
+******************/
+.formButtons {
+  margin: 2em;
+}
+.buttonContainer {
+  display: block;
+  margin-top: 60px;
+  padding: 10px;
+  text-align: center;
+}
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  padding: .7em;
+  border: 1px solid #FAF4D3;
+}
+input[type="submit"] {
+  margin-right: 2em;
+  background-color: #FF7F50;
+  outline-color: #2F4F4F;
+  color: #FAF4D3;
+}
+input[type="reset"] {
+  background-color: #FAF4D3;
+  color: #2F4F4F;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+  background-color: #FAF4D3;
+  color: #2F4F4F;
+  transition: .5s;
 }
