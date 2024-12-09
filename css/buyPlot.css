@@ -2,14 +2,15 @@
 /*******************************
   Buy A Plot Styles
 *******************************/
-h4 {
+h3 {
+  font-size: 1.2rem;
   margin-left: 2em;
   margin-bottom: 1em;
 }
 .fullForm {
   width: 50%;
   margin: 0 auto;
-  background-color: #3c2a49;
+  background-color: #4f4f4f;
   padding: 2em;
   color: #FAF4D3;
 }
@@ -24,7 +25,7 @@ input[type="radio"] {
   display: inline-block;
 }
 .bright {
-  color: #FF7F50;
+  color: #ffbaa1;
 }
 
 /******************
@@ -90,7 +91,7 @@ input[type="radio"] {
   margin-right: 2em;
   background-color: #FF7F50;
   outline-color: #2F4F4F;
-  color: #FAF4D3;
+  color: #2F2F2F;
 }
 .fullForm input[type="reset"] {
   background-color: #FAF4D3;

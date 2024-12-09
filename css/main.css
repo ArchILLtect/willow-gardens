@@ -116,7 +116,7 @@ p {
 main img {
   max-width: 100%; /* make images responsive */
   padding: .4em;
-  border: 1px solid #e3e3e5;
+  border: 1px solid #FAF4D3;
   margin: 0 auto;
   display: block;
 }
@@ -127,7 +127,7 @@ ul {
 
 a {
   font-family: Montserrat;
-  color: red;
+  color: #FF7F50;
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -176,6 +176,7 @@ nav ul {
   list-style: none;
   justify-content: center;
   text-align: center;
+  gap: 2rem;
 }
 
 nav li {
@@ -190,7 +191,7 @@ nav li:hover {
 
 nav li a {
   text-decoration: none;
-  color: #000;
+  color: #FF7F50;
   display: block;
   padding: 0.5em;
   line-height: 0.5;
@@ -208,7 +209,7 @@ nav li a:hover, li a:focus {
 
 a[aria-current="page"] {
   font-weight: bold;
-  color: #fff;
+  color: #FF7F50;
   background-color: #A4665E;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
@@ -248,12 +249,12 @@ nav ul li:focus-within ul {
 
 .loginBtn {
   display: inline-block;
+  font-weight: 800;
   text-wrap: nowrap;
   padding: .7em;
   border: 1px solid #FAF4D3;
   background-color: #FF7F50;
-  outline-color: #2F4F4F;
-  color: #FAF4D3;
+  color: #2F2F2F;
 }
 
 .loginBtn:hover {
@@ -311,7 +312,7 @@ nav ul li:focus-within ul {
   Links
 *******************************/
 a:link {
-  color: #ff9650;
+  color: #FAF4D3;
 }
 a:visited {
   color: #FF7F50;

@@ -14,3 +14,14 @@
   margin: 0 auto;
   padding: 2em;
 }
+b {
+  font-weight: 900;
+}
+main li a {
+  font-family: Merriweather;
+  color: #38194e;
+  font-weight: 900;
+}
+main li a:visited {
+  color: #38194e;
+}
