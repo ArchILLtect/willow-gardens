@@ -43,7 +43,35 @@ main {
 }
 
 header {
-  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+}
+
+.headerMain img {
+  display: inline-block;
+  margin: 0;
+  width: 90px;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.loginContainer {
+  align-content: center;
+}
+
+.headerMain div {
+  background-color: #6C8E58;
 }
 
 h1 {
@@ -53,9 +81,9 @@ h1 {
   font-weight: 800;
 }
 
-.headerBack {
+.headTextBack {
   margin: 0 auto;
-  padding: 10px;
+  padding: 2em;
   width: 50%;
   background-color: #FAF4D3;
 }
@@ -75,7 +103,7 @@ article, section {
   font-family: Source Sans Pro;
   color: #2F4F4F;
   margin: 0 auto;
-  padding: 10px;
+  padding: 2em;
   background-color: #FAF4D3;
   width: 50%;
 }
@@ -85,7 +113,7 @@ p {
   margin: 1em 0;
 }
 
-img {
+main img {
   max-width: 100%; /* make images responsive */
   padding: .4em;
   border: 1px solid #e3e3e5;
@@ -106,18 +134,6 @@ a {
 
 a:focus {
   outline: 2px solid #CC5500;
-}
-
-input {
-  outline-color: red;
-}
-
-input[type="checkbox"]:focus {
-  outline: 2px solid red;
-}
-
-input, input[type="radio"]:focus, select {
-  outline-color: red;
 }
 
 a img {
@@ -151,9 +167,8 @@ a img:hover {
 *******************************/
 
 nav {
-  background-color: #6C8E58;
-  padding: 1em 0;
-  border: 5px solid #B57EDC;
+  background-color: #5a7649;
+  padding: 0.5em 0;
 }
 
 nav ul {
@@ -162,17 +177,9 @@ nav ul {
   justify-content: center;
   text-align: center;
 }
-/*
-nav ul li {
-  display: inline;
-  padding: 0 2em;
-  border: 1px solid hotpink;
-  padding: 1em;
-  background-color: lavenderblush;
-}*/
 
 nav li {
-  background-color: #6C8E58;
+  background-color: #5a7649;
   position: relative;
   transition-duration: 0.5s;
 }
@@ -185,7 +192,8 @@ nav li a {
   text-decoration: none;
   color: #000;
   display: block;
-  padding: 1em;
+  padding: 0.5em;
+  line-height: 0.5;
 }
 
 nav li a:hover {
@@ -234,18 +242,83 @@ nav ul li:focus-within ul {
   display: block;
 }
 
+/*******************************
+  Header => Tool Bar
+*******************************/
+
+.loginBtn {
+  display: inline-block;
+  text-wrap: nowrap;
+  padding: .7em;
+  border: 1px solid #FAF4D3;
+  background-color: #FF7F50;
+  outline-color: #2F4F4F;
+  color: #FAF4D3;
+}
+
+.loginBtn:hover {
+  background-color: #FAF4D3;
+  color: #2F4F4F;
+  transition: .5s;
+}
+
+/* Search Bar Container */
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+
+/* Input Field */
+.search-bar input {
+  flex: 1;
+  padding: 0.55rem 0.5rem 0.35rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #FAF4D3;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+/* Button */
+.search-bar button {
+  padding: 0.45rem 0.5rem 0.4rem 0.5rem;
+  margin-right: 2rem;
+  font-size: 1rem;
+  color: #FAF4D3;
+  background-color: #FAF4D3;
+  border: 1px solid #2F4F4F;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.searchBar button:hover {
+  background-color: #567244;
+}
+
 
 /*******************************
   Links
 *******************************/
 a:link {
-  color: #B57EDC;
+  color: #ff9650;
 }
 a:visited {
   color: #FF7F50;
 }
-a:hover {
-  color: #CC5500;
+a:hover, a:focus {
+  font-size: 18px;
+  color: #e2380d;
 }
 
 /*******************************
@@ -263,7 +336,7 @@ h3, h4 {
   Footer
 *******************************/
 footer {
-  background-color: #e3e3e5;
+  background-color: #5a7649;
   height: 2em;
   clear: both;
 }
@@ -279,3 +352,4 @@ footer p {
 footer {
   flex-shrink: 0;
 }
+
