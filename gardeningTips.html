@@ -40,12 +40,30 @@
                 </div>
             </div>
         </div>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li><a href=buyPlot.html>Apply for a plot</a></li>
-                <li><a href="gardeningTips.html" aria-current="page">Gardening
-                        Tips</a></li>
+        <nav aria-label="Main Navigation Menu">
+            <ul role="menubar">
+                <li role="none"><a href=index.html role="menuitem">Home</a></li>
+                <li role="none"><a href="#" role="menuitem"
+                        aria-haspopup="true">Join Us</a>
+                    <ul aria-label="Product Sub-Menu" role="menu">
+                        <li role="none"><a href="volunteer.html"
+                                role="menuitem">Volunteer</a></li>
+                        <li role="none"><a href="buyPlot.html"
+                                role="menuitem">Apply
+                                for a plot</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="#" role="menuitem" class="currentMenu"
+                        aria-haspopup="true">Information</a>
+                    <ul aria-label="Product Sub-Menu" role="menu">
+                        <li role="none"><a href="aboutUs.html"
+                                role="menuitem">About Us</a>
+                        </li>
+                        <li role="none"><a href="gardeningTips.html"
+                                aria-current="page" role="menuitem">Gardening
+                                Tips</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -168,7 +186,8 @@
             Site Created By:
             <a href="mailto:ndhanson@madisoncollege.edu">Nick Hanson</a>
         </div>
-        <button type="button" id="credits">Info</button>
+        <a href="aboutUs.html" target="_blank"><button type="button"
+                id="credits">Contact Info</button></a>
     </footer>
 </body>
 </html>
