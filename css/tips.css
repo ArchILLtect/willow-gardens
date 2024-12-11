@@ -6,13 +6,27 @@
   background-image: url(../images/veggieBackground.jpg);
   padding: 3em;
 }
-
 #tipsBkgd div {
+  font-family: Source Sans Pro;
   background-color: #fff;
-  opacity: .8;
+  opacity: .9;
   width: 60%;
   margin: 0 auto;
   padding: 2em;
+  letter-spacing: 0.025rem;
+  word-spacing: 0.3rem;
+}
+#tipsBkgd ol {
+  list-style-position: inside;
+}
+#tipsBkgd ol li {
+  margin-top: 2rem;
+}
+#tipsBkgd ol li::marker {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0;
+  color: #FF7F50;
 }
 b {
   font-weight: 900;

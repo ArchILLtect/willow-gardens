@@ -35,9 +35,26 @@ input[type="radio"] {
 .fullForm {
   width: 30rem;
 }
-.fullForm fieldset {
-  margin: 2em;
-  padding: 0 2em 2em 2em;
+#smallSet {
+  padding: 1px;
+  text-align: center;
+  border: none;
+}
+#smallSet label, #yesSeeds {
+  margin: unset;
+}
+#noSeeds {
+  margin-left: 3rem;
+}
+#inputSet {
+  border: none;
+}
+#inputSet input {
+  width: 97%;
+}
+#largeSet {
+  margin: 1em;
+  padding: 0 1em 2em 1em;
   border: 1px solid #FAF4D3;
   border-radius: .5em;
 }

@@ -5,6 +5,11 @@
   Project: UIUX Project 3 - Willow Gardens
   File: index.html - Home Page
   Description: This is the homepage for the Willow Gardens site
+
+
+  Things to add:
+  TODO Add a Volunteer Page
+  TODO Ensure social media links
 -->
 <!doctype html>
 <html lang="en">
@@ -40,21 +45,23 @@
                 </div>
             </div>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href=index.html>Home</a></li>
+                <li><a href=index.html aria-current="page">Home</a></li>
                 <li><a href=buyPlot.html>Apply for a plot</a></li>
                 <li><a href="gardeningTips.html">Gardening Tips</a></li>
             </ul>
         </nav>
     </header>
     <main role="main" id="main-content">
-        <div class="headTextBack sideAccent">
+        <section class="headTextBack">
             <h1>Welcome to Willow Gardens</h1>
+            <img src="/images/WillowGardensLogoLarge-Green_on_Green.jpg"
+                alt="Wilow Gardens Logo">
             <hr>
-        </div>
-        <section class="sideAccent">
-            <img id="food" src="images/food.jpg" alt="image of food">
+        </section>
+        <section>
+            <h2>Who we are</h2>
             <p>Beautiful gardens are at the heart of any community. Westfield,
                 WI,
                 wants Willow Gardens to be an entry point for all community
@@ -70,9 +77,11 @@
                 the land together and share their gardening knowledge and ideas.
                 Gardeners assist in site maintenance and management through
                 volunteer commitments.</p>
+            <img id="food" src="images/food.jpg" alt="image of food">
         </section>
-        <section class="sideAccent">
+        <section>
             <hr>
+            <br>
             <a href="buyPlot.html">Click here to buy a plot!</a>
             <p>What do you receive if you buy a plot?</p>
             <ul>
@@ -85,12 +94,55 @@
                 <li>Teaching materials and advice from our community mentors.
                 </li>
             </ul>
+            <br>
+            <hr>
+        </section>
+        <section id="reviews" class="section-light">
+            <h2>What Our Gardeners Are Saying</h2>
+            <blockquote>
+                <p>"Willow Gardens has been a wonderful experience for our
+                    family!"</p>
+                <cite>– Marco Reyes</cite>
+            </blockquote>
+            <br>
+            <a href="reviews.html">Read More Reviews</a>
+            <br><br>
+            <hr>
+        </section>
+        <section id="connect" class="section-light">
+            <h3>Connect with us on social media:</h3>
+            <div>
+                <a href="https://facebook.com/WillowGardens"
+                    aria-label="Visit our Facebook page">
+                    <img id="facebook" src="icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://instagram.com/WillowGardens"
+                    aria-label="Visit our Instagram page">
+                    <img id="instagram" src="icons/instagram.svg"
+                        alt="Instagram">
+                </a>
+            </div>
+            <div>
+                <a href="mailto:willowgardens@westfield.com">
+                    willowgardens@westfield.com</a>
+                <a href="tel:655-555-5555">655-555-5555</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <a href="mailto:willowgardens@westfield.com">
-            willowgardens@westfield.com</a>
-        <a href="tel:655-555-5555">655-555-5555</a>
+    <footer id="footer">
+        <button type="button" id="credits">Credits</button>
+        <div class="devDiv">
+            <div>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer"
+                    target="_blank">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </div>
+            Site Created By:
+            <a href="mailto:ndhanson@madisoncollege.edu">Nick Hanson</a>
+        </div>
+        <button type="button" id="credits">Contact Info</button>
     </footer>
 </body>
 </html>

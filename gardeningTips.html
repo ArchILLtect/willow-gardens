@@ -40,11 +40,12 @@
                 </div>
             </div>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href=index.html>Home</a></li>
                 <li><a href=buyPlot.html>Apply for a plot</a></li>
-                <li><a href="gardeningTips.html">Gardening Tips</a></li>
+                <li><a href="gardeningTips.html" aria-current="page">Gardening
+                        Tips</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +58,8 @@
                     answers to your gardening questions. Keep reading for all of
                     the
                     basic gardening tips and tricks you'll
-                    need to get started.</p>
+                    need to get started.
+                </p>
                 <ol>
                     <li><b>Light</b>: Most veggies, especially those that bear
                         fruit
@@ -68,6 +70,7 @@
                         direct sun per day. In less light, you can still grow
                         some
                         edibles; mainly leafy crops and herbs.
+                        <hr>
                     </li>
                     <li><b>Soil</b>: Healthy, rich soil is the key to
                         a
@@ -82,6 +85,7 @@
                         organic
                         well-composted animal manures, and
                         organic fertilizers like kelp meal and alfalfa meal.
+                        <hr>
                     </li>
                     <li><b>Size</b>: A vegetable garden can be low-maintenance,
                         but
@@ -93,7 +97,9 @@
                         grow a handful of crops (see the next
                         point). If you wish to start even smaller, try planting
                         container-friendly veggies and herbs in pots
-                        or window-boxes on a sunny deck.</li>
+                        or window-boxes on a sunny deck.
+                        <hr>
+                    </li>
                     <li><b>Plants</b>: With your first veggie garden, it’s very
                         tempting to want to grow everything! But,
                         for your own sake, I’d suggest you pick 4 to 5 types of
@@ -106,7 +112,9 @@
                         harvested, follow up with a second sowing. For example,
                         follow spring lettuce with summer beans.
                         Succession planting allows you to stretch your harvest
-                        season for the longest possible time.</li>
+                        season for the longest possible time.
+                        <hr>
+                    </li>
                     <li><b>Bugs</b>: Ok, this might be hard to believe, but most
                         bugs are your friends! Yup, it’s true.
                         Think bees, butterflies, <a
@@ -117,6 +125,7 @@
                         – and boost crop pollination – include clumps of
                         insect-friendly plants like sweet alyssum, zinnias,
                         cosmos, and sunflowers between the veggies and herbs.
+                        <hr>
                     </li>
                     <li><b>Water, weed & feed</b>: This might seem to be one of
                         the
@@ -140,15 +149,26 @@
                         several times over the growing season. Give them an
                         occasional dose of a water soluble organic
                         food</a> to support growth and encourage the biggest
-                        harvest.</li>
+                        harvest.
+                    </li>
                 </ol>
             </div>
         </div>
     </main>
-    <footer role="contentinfo">
-        <a href="mailto:willowgardens@westfield.com">
-            willowgardens@westfield.com</a>
-        <a href="tel:655-555-5555">655-555-5555</a>
+    <footer id="footer">
+        <button type="button" id="credits">Credits</button>
+        <div class="devDiv">
+            <div>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer"
+                    target="_blank">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </div>
+            Site Created By:
+            <a href="mailto:ndhanson@madisoncollege.edu">Nick Hanson</a>
+        </div>
+        <button type="button" id="credits">Info</button>
     </footer>
 </body>
 </html>

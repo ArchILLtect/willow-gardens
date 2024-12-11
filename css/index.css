@@ -2,4 +2,18 @@
     Homepage stylesheet
 **********************/
 
+#connect div {
+    display: flex;
+    flex-direction: row;
+}
 
+main img {
+    margin-bottom: 2em;
+}
+
+blockquote p, cite {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+}
