@@ -45,11 +45,29 @@
                 </div>
             </div>
         </div>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href=index.html aria-current="page">Home</a></li>
-                <li><a href=buyPlot.html>Apply for a plot</a></li>
-                <li><a href="gardeningTips.html">Gardening Tips</a></li>
+        <nav aria-label="Main Navigation Menu">
+            <ul role="menubar">
+                <li role="none"><a href=index.html aria-current="page"
+                        role="menuitem">Home</a></li>
+                <li role="none"><a href="joinUs.html" role="menuitem"
+                        aria-haspopup="true">Join Us</a>
+                    <ul aria-label="Product Sub-Menu" role="menu">
+                        <li role="none"><a href="#"
+                                role="menuitem">Volunteer</a></li>
+                        <li role="none"><a href="buyPlot.html"
+                                role="menuitem">Apply
+                                for a plot</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="#" role="menuitem"
+                        aria-haspopup="true">Information</a>
+                    <ul aria-label="Product Sub-Menu" role="menu">
+                        <li role="none"><a href="#" role="menuitem">About Us</a>
+                        </li>
+                        <li role="none"><a href="gardeningTips.html"
+                                role="menuitem">Gardening Tips</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

@@ -201,7 +201,8 @@ nav li a:hover, li a:focus {
   transition: background-color 0.5s, color 0.5s;
 }
 
-a[aria-current="page"] {
+a[aria-current="page"],
+.currentMenu {
   background-color: #2F4F4F;
 }
 
