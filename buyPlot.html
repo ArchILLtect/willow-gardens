@@ -116,13 +116,19 @@
                 <br>
                 <fieldset id="inputSet">
                     <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" required id="firstName">
+                    <input type="text" name="firstName" id="firstName" required
+                        aria-required="true">
                     <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" required id="lastName">
+                    <input type="text" name="lastName" id="lastName" required
+                        aria-required="true">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" required id="email">
+                    <input type="email" name="email" id="email" required
+                        aria-required="true">
                     <label for="phone">Phone:</label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="phone" id="phone"
+                        aria-describedby="phoneFormat">
+                    <p id="phoneFormat" class="visuallyHidden">Format: (XXX)
+                        XXX-XXXX</p>
                     <label for="plotNumber">Number of plots:</label>
                     <select name="numberOfPlots" id="plotNumber">
                         <option value="01">1</option>
@@ -132,9 +138,10 @@
                     </select>
                 </fieldset>
                 <h3 class="bright">Join a Garden Team!</h3>
-                <fieldset id="largeSet">
+                <fieldset id="largeSet" aria-describedby="teamDescription">
                     <legend>Pick a team to join!</legend>
-                    <p>Teams are a great way to get to know other gardeners and
+                    <p id="teamDescription">Select the teams you'd like to join!
+                        Teams are a great way to get to know other gardeners and
                         volunteer on your own schedule. Check the box for each
                         team you are interested in!</p>
                     <input type="checkbox" name="mentor" id="mentor"
@@ -142,18 +149,20 @@
                     <label for="mentor">New Garden Mentor</label>
                     <input type="checkbox" name="plot" id="plot"
                         value="maintenance">
-                    <label for="plot">Plot Maintenance </label>
+                    <label for="plot">Plot Maintenance</label>
                     <br>
                     <input type="checkbox" name="water" id="water"
                         value="water">
-                    <label for="water">Water Maintenance </label>
+                    <label for="water">Water Maintenance</label>
                     <input type="checkbox" name="equipment" id="equipment"
                         value="equipment">
-                    <label for="equipment">Equipment Maintenance </label>
+                    <label for="equipment">Equipment Maintenance</label>
                 </fieldset>
                 <div class="buttonContainer">
-                    <input type="submit">
-                    <input type="reset">
+                    <input type="submit" value="Submit Form"
+                        aria-label="Submit the form">
+                    <input type="reset" value="Reset Form"
+                        aria-label="Reset all form fields">
                 </div>
             </form>
         </section>
