@@ -10,6 +10,10 @@ h3 {
   margin-left: 2em;
   margin-bottom: 1em;
 }
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .fullForm {
   width: 50%;
   margin: 0 auto;
@@ -86,6 +90,23 @@ input[type="radio"] {
 .fullForm input[type="radio"] {
   display: inline;
   margin-left: 2em;
+}
+.fullForm input[type="submit"]:hover,
+.fullForm input[type="submit"]:focus,
+.fullForm input[type="reset"]:hover,
+.fullForm input[type="reset"]:focus {
+    background-color: #3b5a34;
+    color: white;
+    transition: 0.3s;
+}
+.fullForm input[type="checkbox"] {
+  margin-left: 1rem;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input[required]::placeholder {
+  color: #FF7F50;
 }
 
 

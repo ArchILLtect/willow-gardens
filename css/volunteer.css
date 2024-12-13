@@ -1,0 +1,20 @@
+section {
+    padding-top: 2rem;
+}
+
+.topMargin {
+    padding-top: 2rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+main ul li::before {
+    content: "🌱"; /* Example icon */
+    margin-right: 0.5rem;
+    
+}

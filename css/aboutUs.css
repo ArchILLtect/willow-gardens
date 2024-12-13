@@ -1,0 +1,21 @@
+
+
+/* Contact Section */
+#contactInfo ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contactInfo ul li {
+    margin-bottom: 0.5rem;
+}
+
+#contactInfo ul li a {
+    color: #5d7e49;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contactInfo ul li a:hover {
+    text-decoration: underline;
+}

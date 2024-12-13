@@ -13,7 +13,12 @@ main img {
 
 blockquote p, cite {
     font-size: 1.2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.02em;
     word-spacing: 0.1em;
+}
+
+.hrSpacing hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }

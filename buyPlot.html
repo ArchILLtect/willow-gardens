@@ -18,7 +18,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap"
         rel="stylesheet">
-
 </head>
 <body>
     <a href="#main-content" class="skipLink">Skip to main content</a>
@@ -43,7 +42,7 @@
             <ul role="menubar">
                 <li role="none"><a href=index.html role="menuitem">Home</a></li>
                 <li role="none"><a href="#" role="menuitem" class="currentMenu"
-                        aria-haspopup="true">Join Us</a>
+                        aria-haspopup="true" aria-expanded="true">Join Us</a>
                     <ul aria-label="Product Sub-Menu" role="menu">
                         <li role="none"><a href="volunteer.html"
                                 role="menuitem">Volunteer</a></li>
@@ -100,7 +99,7 @@
         </section>
         <section>
             <hr>
-            <h3>Please submit the below form to request your garden plot.</h3>
+            <h3>Ready to Start Gardening? Fill Out the Form Below!</h3>
             <form class="fullForm"
                 action="http://itins3.madisoncollege.edu/echo.php"
                 method="post">
@@ -116,16 +115,19 @@
                 <br>
                 <fieldset id="inputSet">
                     <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" id="firstName" required
-                        aria-required="true">
+                    <input type="text" name="firstName" id="firstName"
+                        placeholder="John" required aria-required="true">
                     <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName" required
-                        aria-required="true">
+                    <input type="text" name="lastName" id="lastName"
+                        placeholder="Smith" required aria-required="true">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required
+                    <input type="email" name="email" id="email"
+                        placeholder="example@email.com" required
                         aria-required="true">
                     <label for="phone">Phone:</label>
                     <input type="text" name="phone" id="phone"
+                        pattern="\(\d{3}\) \d{3}-\d{4}"
+                        placeholder="(XXX) XXX-XXXX"
                         aria-describedby="phoneFormat">
                     <p id="phoneFormat" class="visuallyHidden">Format: (XXX)
                         XXX-XXXX</p>
@@ -140,10 +142,16 @@
                 <h3 class="bright">Join a Garden Team!</h3>
                 <fieldset id="largeSet" aria-describedby="teamDescription">
                     <legend>Pick a team to join!</legend>
-                    <p id="teamDescription">Select the teams you'd like to join!
-                        Teams are a great way to get to know other gardeners and
-                        volunteer on your own schedule. Check the box for each
-                        team you are interested in!</p>
+                    <p id="teamDescription">Select one or more teams to join.
+                        Each team has a unique focus:
+                        - Mentor: Help new gardeners.
+                        - Plot Maintenance: Support the plot upkeep of shared
+                        plots.
+                        - Water Maintenance: Support the sprinkler upkeep of
+                        shared plots.
+                        - Equipment Maintenance: Support the maintenance upkeep
+                        of shared plots.
+                    </p>
                     <input type="checkbox" name="mentor" id="mentor"
                         value="mentor">
                     <label for="mentor">New Garden Mentor</label>
@@ -168,20 +176,19 @@
         </section>
     </main>
     <footer id="footer">
-        <button type="button" id="credits">Credits</button>
-        <div class="devDiv">
-            <div>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer"
-                    target="_blank">
-                    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                        alt="Valid CSS!" />
-                </a>
-            </div>
-            Site Created By:
-            <a href="mailto:ndhanson@madisoncollege.edu">Nick Hanson</a>
+        <div>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"
+                target="_blank" rel="noopener noreferrer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
         </div>
-        <a href="aboutUs.html" target="_blank"><button type="button"
-                id="credits">Contact Info</button></a>
+        <div> Site Created By:
+            <a href="mailto:ndhanson@madisoncollege.edu" lang="en">Nick
+                Hanson</a>
+        </div>
+        <div> <a href="aboutUs.html#contactInfo" target="_blank"><button
+                    type="button" id="credits">Contact Info</button></a></div>
     </footer>
 </body>
 </html>

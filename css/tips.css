@@ -5,6 +5,9 @@
 #tipsBkgd {
   background-image: url(../images/veggieBackground.jpg);
   padding: 3em;
+  background-color: #FAF4D3; /* Light cream fallback */
+  background-size: cover;
+  background-attachment: fixed;
 }
 #tipsBkgd div {
   font-family: Source Sans Pro;
@@ -20,7 +23,10 @@
   list-style-position: inside;
 }
 #tipsBkgd ol li {
-  margin-top: 2rem;
+  font-family: Source Sans Pro;
+  color: #141414;
+  margin-top: 2.5rem;
+  line-height: 1.8;
 }
 #tipsBkgd ol li::marker {
   font-size: 2rem;
@@ -35,7 +41,26 @@ main li a {
   font-family: Merriweather;
   color: #38194e;
   font-weight: 900;
+  text-decoration: underline;
 }
 main li a:visited {
   color: #38194e;
+  text-decoration: underline;
+}
+main li a:hover {
+  color: #5d7e49;
+  text-decoration: underline;
+}
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #38194e;
+}
+.cta a {
+  color: #5d7e49;
+  font-weight: bold;
+}
+.cta a:hover {
+  text-decoration: underline;
 }

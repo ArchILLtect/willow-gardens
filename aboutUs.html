@@ -5,18 +5,15 @@
   Project: UIUX Project 3 - Willow Gardens
   File: aboutUs.html
   Description: This page gives information about Willow Gardens
-  TODO Edit meta description
-  TODO Create CSS page or remove link in <head>
-  TODO Add page content - info and reviews
 -->
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>About Us - Willow Gardens</title>
-    <meta name="description" content="Discover Willow Gardens, a community gardening project in Westfield, WI.
-                    Rent garden plots, explore gardening tips, and connect with your community
-                    in a vibrant, accessible environment." />
+    <meta name="description"
+        content="Discover Willow Gardens, a community garden project in Westfield, WI.
+            Rent garden plots, get gardening tips, connect with your community.." />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/aboutUs.css">
     <link
@@ -56,7 +53,8 @@
                     </ul>
                 </li>
                 <li role="none"><a href="#" role="menuitem" class="currentMenu"
-                        aria-haspopup="true">Information</a>
+                        aria-haspopup="true"
+                        aria-expanded="true">Information</a>
                     <ul aria-label="Product Sub-Menu" role="menu">
                         <li role="none"><a href="aboutUs.html"
                                 aria-current="page" role="menuitem">About Us</a>
@@ -108,12 +106,13 @@
                     advice to support your gardening journey.</li>
             </ul>
         </section>
-        <section>
+        <section id="contactInfo">
             <h2>Contact Us</h2>
-            <p>We'd love to hear from you! Whether you have questions, ideas, or
-                want to get involved, feel free to reach out:</p>
-            <ul class="section-light">
-                <li><b>Email: </b><a href="mailto:willowgardens@westfield.com">
+            <p id="contactDesc">Feel free to email us, call us, or visit our
+                location for more information!</p>
+            <ul class="section-light" aria-describedby="contactDesc">
+                <li><b>Email: </b><a href="mailto:willowgardens@westfield.com"
+                        lang="en">
                         willowgardens@westfield.com</a></li>
                 <li><b>Phone: </b><a href="tel:655-555-5555">655-555-5555</a>
                 </li>
@@ -122,20 +121,19 @@
         </section>
     </main>
     <footer id="footer">
-        <button type="button" id="credits">Credits</button>
-        <div class="devDiv">
-            <div>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer"
-                    target="_blank">
-                    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                        alt="Valid CSS!" />
-                </a>
-            </div>
-            Site Created By:
-            <a href="mailto:ndhanson@madisoncollege.edu">Nick Hanson</a>
+        <div>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"
+                target="_blank" rel="noopener noreferrer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
         </div>
-        <a href="aboutUs.html" target="_blank"><button type="button"
-                id="credits">Contact Info</button></a>
+        <div> Site Created By:
+            <a href="mailto:ndhanson@madisoncollege.edu" lang="en">Nick
+                Hanson</a>
+        </div>
+        <div> <a href="aboutUs.html#contactInfo" target="_blank"><button
+                    type="button" id="credits">Contact Info</button></a></div>
     </footer>
 </body>
 </html>
