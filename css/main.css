@@ -228,6 +228,22 @@ a[aria-current="page"],
 .currentMenu {
   background-color: #2F4F4F;
 }
+.buttonLink {
+  display: flex;
+  padding: 0.4rem 1rem;
+  background-color: #5d7e49;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.buttonLink:hover {
+  background-color: #3b5a34;
+}
+.contactBtn {
+  display: flex;
+  align-items: center;
+}
 
 /*******************************
   Sub menu
@@ -377,7 +393,7 @@ footer {
   justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 7px 10px;
+  padding: 10px 10px;
   background-color: #5a7649;
   color: whitesmoke;
   width: 98%;
