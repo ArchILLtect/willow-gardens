@@ -34,6 +34,9 @@
   line-height: 0;
   color: #FF7F50;
 }
+p {
+  color: #141414;
+}
 b {
   font-weight: 900;
 }

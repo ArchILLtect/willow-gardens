@@ -126,6 +126,10 @@ p {
   margin: 1em 0;
 }
 
+div {
+  color: #FAF4D3;
+}
+
 main img {
   max-width: 100%; /* make images responsive */
   padding: .4em;
@@ -140,7 +144,7 @@ ul {
 
 a {
   font-family: Montserrat;
-  color: #FF7F50;
+  color: #FAF4D3;
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -195,7 +199,7 @@ nav ul {
 }
 
 nav li {
-  background-color: #5a7649;
+  background-color: #FAF4D3;
   position: relative;
   transition-duration: 0.5s;
 }
@@ -208,7 +212,7 @@ nav li a {
   font-family: Montserrat;
   font-weight: bold;
   text-decoration: none;
-  color: #FF7F50;
+  color: #2F2F2F;
   display: block;
   padding: 0.5em;
   line-height: 0.5;
@@ -226,13 +230,13 @@ nav li a:hover, li a:focus {
 
 a[aria-current="page"],
 .currentMenu {
-  background-color: #2F4F4F;
+  background-color: #8cbd6b;
 }
 .buttonLink {
   display: flex;
   padding: 0.4rem 1rem;
-  background-color: #5d7e49;
-  color: white;
+  background-color: #3b5a34;
+  color: #FAF4D3;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -248,8 +252,6 @@ a[aria-current="page"],
 /*******************************
   Sub menu
 *******************************/
-
-
 nav ul li ul {
   position: absolute;
   min-width: 10.3em;
