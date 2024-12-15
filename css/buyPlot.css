@@ -21,6 +21,13 @@ section {
   padding: 2em;
   color: #FAF4D3;
 }
+.centerHeading {
+  display: flex;
+  justify-content: center;
+}
+.centerHeading h3 {
+  margin: 0;
+}
 input {
   display: block;
 }
